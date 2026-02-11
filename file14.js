@@ -7,3 +7,4 @@ const names = ["Vivek", "Shivam", "Aman"]
 //? Spread Operator
 const arr = [...names, "Rahul"]
 console.log(arr)
+
