@@ -1,8 +1,8 @@
 // const add = (x, y) => {
-//     return x + y;
+//     return x + y;  //? return required when using curly braces
 // };
 
-// const add = (x, y) => x + y;
+// const add = (x, y) => x + y;  //? return not required
 // const result = add(4, 5);
 // console.log(result);
 
