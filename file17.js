@@ -1,3 +1,5 @@
+//! forEach loop
+
 const products = ["product1", "product2", "product3"];
 
 // for (let i = 0; i < products.length; i++){
@@ -10,7 +12,6 @@ products.forEach((product) => {
   console.log(product);
 });
 // products.forEach((product) => console.log(product));
-
 
 //? ---------------------------------------------------
 

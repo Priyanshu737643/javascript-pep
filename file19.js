@@ -1,4 +1,4 @@
-// const products = ["product1", "product2", "product3"];
+//! map() function
 
 const products = [
   { id: 1, name: "Product1", desc: "This is description 1", price: 100 },

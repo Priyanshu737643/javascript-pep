@@ -1,4 +1,4 @@
-// const products = ["product1", "product2", "product3"];
+//! forEach loop
 
 const products = [
   { id: 1, name: "Product1", desc: "This is description 1", price: 100 },
@@ -22,5 +22,3 @@ products.forEach((product) => {
 });
 
 console.log(cart);
-
-

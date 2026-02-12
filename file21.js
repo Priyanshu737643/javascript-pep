@@ -1,4 +1,4 @@
-//! filter() function
+//! find() function
 
 const products = [
   {
@@ -45,15 +45,13 @@ const products = [
   },
 ];
 
-let search = "Laptop";
-
-//* const resultArray = products.map((product) => product)
-
-//! filter() function
-// const resultArray = products.filter((product) => {
-//     return product.category === search;  //? return only if its 'true'
-// })
-
-const resultArray = products.filter((product) => product.category === search);
-
+let category = "ProductId";
+let text = 1;
+//! find() function
+const resultArray = products.find((product) => product.id === text);
 console.log(resultArray);
+
+//? --------------------------------------
+// filter()  = gives array
+// find()  = gives object
+//* forEach() , map() , filter() , find()
