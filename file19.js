@@ -6,21 +6,13 @@ const products = [
   { id: 3, name: "Product3", desc: "This is description 3", price: 150 },
 ];
 
-let cart = [];
+//! map() function
 
-// products.forEach((product) => console.log(product));
-
-products.forEach((product) => {
-  // product.qty = 1;
-  // product.total = product.qty * product.price;
-  // cart.push(product)
+const cart = products.map((product) => {
   const obj = {
     ...product,
     qty: 1,
   };
-  cart = [...cart, obj];
+  return obj;
 });
-
 console.log(cart);
-
-
