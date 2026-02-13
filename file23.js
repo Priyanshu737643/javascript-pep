@@ -72,7 +72,7 @@ numbers = [5, 3, 6, 1];
 // console.log(result);
 
 //* -----------------------------------------------------------------------
-//! sum()
+//! some()
 
 //? numbers.some(()=>{})
 //? const result = numbers.some(() => { })
@@ -106,3 +106,4 @@ const result = numbers.every((number) => {
   return number > 2;
 });
 console.log(result);
+
