@@ -131,26 +131,50 @@ const products = [
 //* ----------------------------------------------------------------------------
 
 const cart = [];
+//? addToCart
 function addToCart(productId) {
   const product = products.find((product) => product.id === productId);
   cart.push({ ...product, quantity: 1 });
 }
+
+//? increment
 function increment(productId) {
   const item = cart.find((product) => product.id === productId);
   item.quantity++;
 }
+
+//? decrement
 function decrement(productId) {
   const item = cart.find((product) => product.id === productId);
   item.quantity--;
 }
+
+//? calculateTotal
 const userEmail = "john@gmail.com";
 function calculateTotal() {
-  let total = 0;
-  for (let item of cart) {
-    total += item.price * item.quantity;
-  }
-  return total;
+  //* other way
+  // let total = cart.reduce((sum, item) => {
+  //   return sum + (item.price * item.quantity);
+  // }, 0)
+
+  //* other way
+  // let total = cart.reduce((sum, item) => sum + item.price * item.quantity);
+  // return total;
+  
+  //* other way
+  cart.reduce((sum, item) => sum + item.price * item.quantity);
+
+  //? reduce()  =  loop that gives only 1 value
+
+  //* other way
+  // let total = 0;
+  // for (let item of cart) {
+  //   total += item.price * item.quantity;
+  // }
+  // return total;
 }
+
+//? placeOrder
 function placeOrder() {
   if (cart.length === 0) {
     console.log("Cart is empty");
@@ -190,6 +214,8 @@ increment(5);
 // console.log(cart);
 decrement(1);
 // console.log(cart);
-decrement(1);
+// decrement(1);
 // console.log(cart);
 placeOrder();
+ 
+
