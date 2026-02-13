@@ -86,9 +86,23 @@ numbers = [5, 3, 6, 1];
 // console.log(result);
 
 //* if mark > 80 in atleast 1 subject then PASS
-let marks = [78, 50, 90, 20];
-const result = marks.some((mark) => {
-  return mark > 80;
+// let marks = [78, 50, 90, 20];
+// const result = marks.some((mark) => {
+//   return mark > 80;
+// });
+// if (result) console.log("Pass");
+// else console.log("Fail");
+
+//* -----------------------------------------------------------------------
+//! every()
+
+//? numbers.every(() => { })
+//? const result = numbers.every(() => { })
+// used to check if all element of the array satisfies the condition
+// gives boolean
+
+//* checks if all numbers are greater than 1 
+const result = numbers.every((number) => {
+  return number > 2;
 });
-if (result) console.log("Pass");
-else console.log("Fail");
+console.log(result);
