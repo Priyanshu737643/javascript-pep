@@ -1,7 +1,9 @@
 import Header from "./header.js";
-import { Products } from "./data.js";
 import Footer from "./footer.js";
+import Products from "./products.js";
 
 console.log(Header());
-console.log(Products());
+console.log(".........................");
+console.table(Products());
+console.log(".........................");
 console.log(Footer());
