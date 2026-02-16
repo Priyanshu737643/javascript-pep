@@ -1,7 +1,10 @@
 const student = {
   name: "John",
-    age: 21,
-    city: "Jalandhar",
+  age: 21,
+    marks: {
+        math: 60,
+        science:90,
+  },
 };
 
 // console.log(student.name)
@@ -17,6 +20,12 @@ const student = {
 // console.log(userName);
 
 //? if already city given in student, then it will take that by default
-const { city="Amritsar"} = student;
-console.log(city);
+// const { city = "Amritsar" } = student;
+// console.log(city);
+
+//? Nested Objects Destructuring
+const { marks } = student;
+console.log(marks);
+const { marks: { math } } = student;
+console.log(math);
 
