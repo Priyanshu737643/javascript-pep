@@ -1,14 +1,15 @@
 const cart = {
-  items: [],
-  addItems: function addItems(item) {
-    this.items.push(item);
-  },
-  showItems: function showItems() {
-    for (let i = 0; i < this.items.length; i++) {
-      console.log(this.items[i]);
+    items :[],
+    addItems: function addItems(item) {
+        this.items.push(item);
+    },
+    showItems: function showItems() {
+        for (let i = 0; i < this.items.length; i++){
+            console.log(this.items[i]);
+        }
+        console.log(this.items);
     }
-  },
-};
+}
 
 cart.addItems("Laptop");
 cart.addItems("Desktop");
